@@ -1431,11 +1431,11 @@ input.popap__input::placeholder {
   }
   .btn__discont::after {
     content: "";
-    width: 60px;
-    height: 20px;
+    width: 140px;
+    height: 40px;
     position: absolute;
     background-image: url(../img/Branch.png);
-    background-size: 60px 20px;
+    background-size: contain;
     background-repeat: no-repeat;
     left: 70%;
     top: 50%;
@@ -1479,6 +1479,9 @@ input.popap__input::placeholder {
     max-width: 100%;
     height: 100%;
     padding-bottom: 5vw;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/bg2.jpg);
   }
   .main__text {
     margin-left: 20px;
@@ -1559,8 +1562,11 @@ input.popap__input::placeholder {
     font-size: 14px;
     line-height: 50px;
     z-index: 3;
+    position: absolute;
+    top: 0;
   }
   .form_cbx {
+    position: relative;
     margin: 0 auto;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1670,6 +1676,9 @@ input.popap__input::placeholder {
     font-size: 12px;
     line-height: 40px;
   }
+  .main {
+    padding-bottom: 100px;
+  }
   .main__title {
     font-size: 24px;
   }
@@ -1735,6 +1744,16 @@ input.popap__input::placeholder {
   .header__contact {
     margin-top: 15px;
     margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 728px) {
+  .main {
+    max-width: 100%;
+    height: 100%;
+    padding-bottom: 5vw;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/bg.jpg);
   }
 }
 @media screen and (max-width: 470px) {
