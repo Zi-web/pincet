@@ -1,0 +1,145 @@
+@import "variables.less";
+@import "normalize.less";
+.header {
+    font-family: museosanscyrl-300;
+    z-index: 10;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .container();
+}
+
+.header__wrapper {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    width: 100%;
+}
+
+.header__phone {
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 1.6vw;
+  text-align: left;
+  margin-bottom: 0.2vw;
+}
+
+.header__phone-text {
+  
+}
+
+.header__phone-icon, .header__time-icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+  & img {
+    display: block;
+    width: 1.2vw;
+    height: 1.2vw;
+  }
+}
+
+
+.header__online {
+  font-style: normal;
+  font-size: 0.8vw;
+  color: #282828;
+  margin: 0;
+  margin-bottom: 5px;
+  position: relative;
+  margin-left: 2.9vw;
+  font-weight: bold;
+}
+
+.header__online::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  left: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #1ADC2D;
+  width: 6px;
+  height: 6px;
+  z-index: -1;
+}
+
+.header__time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  padding-left: 1.8vw;
+  text-align: left;
+  font-weight: bold;
+  & p {
+    margin-left: 1.8vw;
+    font-size: 1vw;
+  }
+}
+
+.header__num {
+  display: inline-block;
+  white-space: nowrap;
+  color: #282828;
+  font-size: 1.2vw;
+  padding-left: 1.8vw;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1170px) {
+  .header {
+   	
+  }
+  .header__wrapper {
+    border-bottom: 0px solid #ffffff;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  
+}
+
+@media screen and (max-width: 800px) {
+ .header__contact {
+  display: none;
+ }
+ .header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  
+  .header__contact {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,223 @@
+@import "variables.less";
+@import "normalize.less";
+.btn {
+	font-family: museosanscyrl-300;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	display: inline-block;
+	box-sizing: border-box;
+	text-decoration: none;
+  	z-index: 1;
+  	border: none;
+  	cursor: pointer;
+  	transition: 0.3s ease;
+  }
+
+.btn:focus, .btn:active {
+	outline: none;
+
+}
+
+.btn--header {
+	text-align:center;
+	max-width: 15vw;
+	width: 100%;
+	line-height: 56px;
+	border-radius: 50px;
+    font-size: 1vw;
+    background: #fefcfb;
+    color: #1f1d1d;
+    position: relative;
+    padding-left: 2vw;
+    z-index: 0;
+}
+
+
+.btn--header::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background: url(../img/icon_signup.png);
+	background-size: 20px 20px;
+	left: 1.5vw;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+.btn--header:hover {
+	box-shadow: 0 0.3vw 0.3vw 0 #d7747a;
+}
+
+.btn__discont {
+	margin-bottom: 100px;
+	box-sizing: border-box;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 1.1vw;
+	max-width: 25vw;
+	line-height: 1.2vw;
+	height: 4vw;
+	border-radius: 50px;
+	padding-right: 10vw;
+	padding-left: 2vw;
+	color: #ffffff;
+	box-shadow: 0 0.3vw 0 0 #d7747a;
+	transition: all 0.3s ease;
+	background: linear-gradient(180deg, rgba(248,180,182,1) 0%, rgba(241,149,154,1) 60%);
+}
+
+.btn__discont:hover {
+	background: linear-gradient(180deg, rgba(241,149,154,1) 0%, rgba(248,180,182,1) 60%);
+}
+
+.btn__discont:focus {
+	box-shadow: 0 -0.3vw 0 0 #d7747a;
+}
+
+.btn__discont::after {
+	content: "";
+	width: 15vw;
+	height: 3.5vw;
+	position: absolute;
+	background-image: url(../img/Branch.png);
+	background-size: 14vw 3.5vw;
+	background-repeat: no-repeat;
+	left: 65%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.btn__popap {
+	z-index: 3;
+	position: relative;
+	width: 24vw;
+}
+
+.btn--popap {
+	box-sizing: border-box;
+	position: relative;
+	text-transform: uppercase;
+	font-size: 1.05vw;
+	width: 24vw;
+	line-height: 1.2vw;
+	height: 3.5vw;//87px;
+	border-radius: 50px;
+	padding-right: 2.5vw;
+	padding-left: 1.5vw;
+	color: #ffffff;
+	z-index: 1;
+	box-shadow: 0 0.3vw 0 0 #d7747a;
+	background: linear-gradient(180deg, rgba(248,180,182,1) 0%, rgba(241,149,154,1) 60%);
+}
+
+.btn--popap:hover {
+	background: linear-gradient(180deg, rgba(241,149,154,1) 0%, rgba(248,180,182,1) 60%);
+}
+
+.btn--popap:focus {
+	box-shadow: 0 -0.3vw 0 0 #d7747a;
+}
+
+.btn__popap::after {
+	content: "";
+	width: 15vw;
+	height: 3.5vw;
+	position: absolute;
+	background-image: url(../img/Plant.png);
+	background-size: 10vw 3vw;
+	background-repeat: no-repeat;
+	left: 75%;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+}
+
+
+@media screen and (max-width: 992px) {
+	.btn--header {
+		max-width: 200px;
+		height: 46px; 
+		font-size: 14px;
+		line-height: 46px;
+	}
+	.btn__discont {
+		margin-bottom: 100px;
+		box-sizing: border-box;
+		position: relative;
+		text-transform: uppercase;
+		font-size: 12px;
+		line-height: 14px;
+		max-width: 260px;
+		height: 56px;
+		border-radius: 50px;
+		padding-right: 10vw;
+		padding-left: 10px;
+		box-shadow: 0 0 5px 0 0 #d7747a;
+	}
+
+	.btn__discont:focus {
+		box-shadow: 0 -5px 0 0 #d7747a;
+	}
+
+	.btn__discont::after {
+		content: "";
+		width: 140px;
+		height: 40px;
+		position: absolute;
+		background-image: url(../img/Branch.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		left: 70%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	.btn__popap {
+		margin: 0 auto;
+		z-index: 3;
+		position: relative;
+		max-width: 500px;
+		width: 100%;
+	}
+
+	.btn--popap {
+		box-sizing: border-box;
+		position: relative;
+		text-transform: uppercase;
+		font-size: 14px;
+		width: 100%;
+		line-height: 50px;
+		height: 50px;
+		border-radius: 50px;
+		padding-right: 30px;
+		padding-left: 15px;
+		box-shadow: 0 5px 0 0 #d7747a;
+	}
+
+	.btn--popap:focus {
+		box-shadow: 0 5px 0 0 #d7747a;
+	}
+
+	.btn__popap::after {
+		width: 90px;
+		height: 30px;
+		background-size: contain;
+		left: 80%;
+		top: 50%;
+	}
+
+}
+
+@media screen and (max-width: 428px) {
+	.btn--header {
+		max-width: 190px;
+		height: 40px; 
+		font-size: 12px;
+		line-height: 40px;
+	}
+	.btn__discont {
+		
+	}
+}

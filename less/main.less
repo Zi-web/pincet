@@ -1,0 +1,239 @@
+@import "variables.less";
+@import "normalize.less";
+.main {
+	max-width: 100vw;
+	height: 100%;
+	padding-bottom: 5vw;
+	overflow: hidden;
+    background-color: #eee;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+   font-family: museosanscyrl-300;
+}
+
+.main__wrapper {
+	font-family: museosanscyrl-300;
+	position: relative;
+	z-index: 1;
+	height: 100%;
+}
+
+.main__card {
+	position: absolute;
+	left: 60%;
+	bottom: -5%;
+	transform: translateX(-50%);
+	width: 50vw;
+	height: 25vw;
+    z-index: -1;
+    & img {
+    	display: block;
+    	width: 100%;
+    	height: auto;
+    }
+}
+
+.main__icon-i {
+	position: absolute;
+	left: 55%;
+	bottom: 11%;
+	transform: translateX(-50%);
+	width: 5vw;
+	height:5vw;
+    z-index: 1;
+    & img {
+    	display: block;
+    	width: 100%;
+    	height: auto;
+    }
+}
+
+.main__icon-i:hover .main__text-hover-wrap {
+	cursor: pointer;
+	opacity: 1;
+
+}
+.main__text {
+	margin-left: 115px;
+	max-width: 43vw;
+	color: #282828;
+	padding-top: 3vw;
+	padding-bottom: 2vw;
+	z-index: 1000;
+}
+
+.main__title {
+	position: relative;
+	font-size: 3vw;
+	z-index: 90;
+}
+
+.main-bottom__link {
+	position: absolute;
+	bottom: -35px;
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	background-color: #9593c4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+}
+
+.main__items {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 2.5vw;
+}
+.main__item {
+	list-style: none;
+	padding-left: 30px;
+	position: relative;
+	padding-top: 0.5vw;
+	padding-bottom: 0.5vw;
+	font-size: 1vw;
+}
+
+.main__item::before {
+	position: absolute;
+	content: "";
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	border: 4px solid #ffffff;
+	color: #ef9499;
+	background-color: #ef9499;
+	background-size: 8px 8px;
+}
+
+.main__text-hover-wrap {
+	position: absolute;
+	bottom: 60%;
+	left: 60%;
+	z-index: 100;
+	opacity: 0;
+	transition: 0.3s ease;
+}
+
+.main__text-hover {
+	width: 12vw;
+	height: 12vw;
+	background-color: #ffffff;
+	border-radius: 1vw;
+	padding: 2vw;
+	box-sizing: border-box;
+	position: relative;
+	border-top-right-radius: 1vw;
+	border-top-left-radius: 1vw;
+	width: 12vw;
+	font-size: 0.8vw;
+	box-shadow: 1.5vw 0.5vw 0 -1vw rgba(255, 255, 255, 0.5);
+	& p {
+		margin: 0;
+	}
+}
+
+.main__text-hover:before {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: -1vw;
+	z-index: 1;
+	width: 100%;
+    overflow: hidden;
+    height: 3vw;
+    background: #ffffff;
+    border-radius: 50% 50% 0px 0px;
+}
+
+.main__text-hover:after {
+	position: absolute;
+	content: "";
+	left: 0.5vw;
+	top: -1.5vw;
+	z-index: 1;
+	width: 100%;
+    overflow: hidden;
+    height: 3vw;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50% 50% 0px 0px;
+}
+
+@media screen and (max-width: 992px) {
+	.main {
+		max-width: 100%;
+		height: 100%;
+		padding-bottom: 5vw;
+		background-size: cover;
+		background-position: center;
+		background-image: url(../img/bg2.jpg);
+	}
+ 	.main__text {
+		margin-left: 20px;
+		max-width: 70%;
+		padding-top: 3vw;
+		padding-bottom: 2vw;
+		z-index: 1000;
+	}
+	.main__card {
+		display: none;
+	}
+	.main__icon-i {
+		display: none;
+	}
+	.main__items {
+		margin: 0;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.main__item {
+		list-style: none;
+		padding-left: 30px;
+		position: relative;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.main__title {
+		font-size: 30px;
+	}
+}
+
+@media screen and (max-width: 728px) {
+	.main {
+		max-width: 100%;
+		height: 100%;
+		padding-bottom: 5vw;
+		background-size: cover;
+		background-position: center;
+		background-image: url(../img/bg.jpg);
+	}
+}
+
+@media screen and (max-width: 428px) {
+	.main {
+		padding-bottom: 100px;
+	}
+	.main__title {
+		font-size: 24px;
+	}
+}

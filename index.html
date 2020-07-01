@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Pincet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery/jquery-3.4.1.min.js"></script>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+  </head>
+  <body>
+  <section class="main">    
+    <div class="main__wrapper">
+      <header id="header" class="header">
+        <div class="header__wrapper">
+          <div class="logo">
+            <a href="#" class="logo__img">
+              <img src="img/logo.png" alt="">
+            </a>
+            <div class="logo__descr">
+            <p>Студия депиляции и массажный кабинет в Бресте</p>
+          </div>
+          </div>
+          <div class="address">
+            <img src="img/map.png" alt="">
+            <div class="address__text">
+              <p class="address__text-1">Мы находимся в центре:</p>
+              <p>г. Брест, ул.Гоголя, д.65</p>
+              <span class="address__look">Смотреть на карте</span>
+            </div>
+            <div class="address__map">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8b2445a7fff0b15a3a01971c12fc3b9d7ac21edc62d52883b1f6859997e6e792&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+            </div>
+          </div>
+          <div class="header__contact">
+            <div class="header__phone">
+              <div class="header__phone-icon">
+                <img src="img/icon_tel.png" alt="">
+              </div>
+              <p class="header__online">Звоните, мы сейчас работаем</p>
+              <a class="header__num" href="tel:+375333822499">+375 33 382-24-99</a>
+            </div>
+            <div class="header__time">
+              <div class="header__time-icon">
+                <img src="img/icon_time.png" alt="">
+              </div>
+              <p>Пн-Вс 9:00-21:00</p>
+            </div>
+          </div>
+           <a id="btn__call" href="#" class="btn  btn--header  btn-popap">Записаться онлайн</a>
+        </div>
+        <div class="menu" id="menu">
+            <div class="menu__icon" id="menu__icon">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <ul class="menu__links">
+              <div class="menu__links-container">
+                <li><a class="menu__links-item active" href="#">Главная</a></li>
+                <li><a class="menu__links-item" href="#">Шугаринг и депиляция воском </a></li>
+                <li><a class="menu__links-item" href="#">Антицеллюлитный массаж</a></li>
+                <li><a class="menu__links-item" href="#">Классический массаж</a></li>
+                <li><a class="menu__links-item" href="#">Обучение</a></li>
+                <li><a class="menu__links-item" href="#">Косметика для мастеров</a></li>
+                <li><a class="menu__links-item" href="#">Статьи</a></li>
+                <li><a class="menu__links-item" href="#">О студии</a></li>
+                <li><a class="menu__links-item" href="#">Контакты</a></li>
+              </div>
+            </ul>
+        </div>
+      </header>
+      <div class="main__text">
+        
+        <h1 class="main__title">Хотите избавиться от нежелательных волос или нужен сеанс антицеллюлитного массажа?</h1>
+        <ul class="main__items">
+          <li class="main__item">депиляция воском и Шугаринг;</li>  
+          <li class="main__item">профессиональные сертифицированные мастера;</li>  
+          <li class="main__item">работаем и с женщинами, и с мужчинами;</li>  
+          <li class="main__item">результат уже после первой процедуры.</li>  
+        </ul>
+        <button class="btn btn__discont  btn-popap">
+          ПОЛУЧИТЬ КАРТУ КЛИЕНТА БЕСПЛАТНО
+        </button>
+      </div>
+      <div class="main__card">
+        <img src="img/card2.png" alt="">
+        <div class="parallax__layer" id="parallax-2" data-speed="80"></div>
+      </div>
+      <div class="main__icon-i">
+        <img src="img/icon_i.png" alt="">
+        <div class="main__text-hover-wrap">
+          <div class="main__text-hover">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</p>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="parallax">
+      <div class="parallax__layer" id="parallax-0" data-speed="60"></div>
+      <div class="parallax__layer" id="parallax-1" data-speed="80"></div>
+    </div>
+  </section>
+
+<!------popap------------>
+  <div class="overlay">
+  </div>
+
+  <div class="popap-wrapper">           
+    <form action="#" class="popap" method="POST">
+    <span id="closeform" class="popap__close"></span>
+    <h3 class="popap__title">Получите программу обучения</h3>
+    <p class="popap__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+    <div class="popap__row">
+      <div class="popap__select">
+
+        <div class="form_cbx">
+           <select>
+            <option value="Повышение квалификации">Повышение квалификации</option>
+            <option value="2">Второй пункт</option>
+            <option value="3">Третий пункт</option>
+            <option value="4">Четвёртый пункт</option>
+            <option value="5">Пятый пункт</option>
+            <option value="6">Шестой пункт</option>
+           </select>
+      </div>
+
+      </div>
+      <div class="popap__input  popap__input--name">
+        <label for="name"></label>
+        <input type="email" name="email" id="email" placeholder="Ваше имя">
+      </div>
+
+      <div class="popap__input  popap__input--tel">
+        <label for="tel"></label>
+          <input type="tel" id="tel" name="tel" placeholder="Ваш номер телефона">
+      </div>
+    </div>
+      <div class="btn__popap">
+        <input type="submit" class="btn  btn--popap" value="Получить программу">
+      </div>
+    </form>  
+  </div>
+  <script type="text/javascript" src="js/parallax.js"></script>
+  <script type="text/javascript" src="js/popap.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+  </body>
+</html>
