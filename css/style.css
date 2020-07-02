@@ -620,7 +620,7 @@ template {
   width: 100%;
   height: auto;
 }
-.main__icon-i:hover .main__text-hover-wrap {
+.main__icon-i img:hover + .main__text-hover-wrap {
   cursor: pointer;
   opacity: 1;
 }
